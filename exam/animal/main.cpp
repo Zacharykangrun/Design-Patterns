@@ -1,9 +1,11 @@
 
 #include <iostream>
+#include <string>
 #include "inc/cat.h"
 #include "inc/food.h"
 #include "inc/sausage.h"
 
+using namespace std;
 
 int main(int argc, char const *argv[])
 {
@@ -13,9 +15,9 @@ int main(int argc, char const *argv[])
     class sausage  big_sausage = sausage(100);
 
     green_cat.eat((food &)small_sausage);  
-    std::cout << green_cat.getEnergy() << std::endl; 
+    cout << green_cat.getEnergy() << endl; 
     green_cat.eat((food &)big_sausage);  
-    std::cout << green_cat.getEnergy() << std::endl; 
+    cout << green_cat.getEnergy() << endl; 
 
     return 0;
 }
