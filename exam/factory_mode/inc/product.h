@@ -46,8 +46,8 @@ private:
     unsigned int capability=0;
     /* data */
 public:
-    Trunk(/* args */);
-    ~Trunk();
+    Trunk(/* args */){}
+    ~Trunk(){}
 
     void work() const override{       //ps: const override
         cout << "Using Trunk delive stuff" << endl;
@@ -59,8 +59,8 @@ class Ship:public product
 private:
     /* data */
 public:
-    Ship(/* args */);
-    ~Ship();
+    Ship(/* args */){}
+    ~Ship(){}
     
     void work() const override{       //ps: const override
         cout << "Using Trunk delive stuff" << endl;
