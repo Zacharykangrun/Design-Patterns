@@ -22,8 +22,9 @@ int main(int argc, char const *argv[])
     /* code */
     A a = string("this is a string param\n");
     A b = string("this is b string param\n");
-    A c = a + b;
-    cout << c.get() << endl; 
+
+    A d = a + b;
+    cout << d.get() << endl; 
     return 0;
 }
 
