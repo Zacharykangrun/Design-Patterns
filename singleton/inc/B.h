@@ -3,11 +3,13 @@
 #include <iostream>
 #include "singleton.h"
 using namespace std;
-using namespace ulities;
+using namespace Singleton;
+using namespace SingletonOne;
 
 class B
 {
     friend class singleton<B>;
+    friend class singletonOne<B>;
 
 private:
     B(/* args */):m_name("B"){}
