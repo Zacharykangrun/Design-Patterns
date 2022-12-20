@@ -18,7 +18,7 @@ public:
     }
     
     void prepareFood(const std::string &food){
-        std::cout << "正在准备：" << food << "菜" << std::endl;
+        std::cout << "kitchen is cooking: " << food << std::endl;
     }
 };
 
@@ -38,7 +38,7 @@ public:
     }
     ~Order(){}
     virtual void execute() const override {
-        cout << "厨房正在进行处理。。。" << endl;
+        cout << "kitchen is preparing food material..." << endl;
         for(const string & item:m_foods){
             m_kitchen->prepareFood(item);
         }
@@ -59,7 +59,7 @@ public:
     }
 
     void orderUP(command * command){
-        cout<< "服务员提交订单。。。" << endl;
+        cout<< "Waitress is submitting..." << endl;
         m_command = command;
         m_command->execute();
     }
