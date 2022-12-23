@@ -88,7 +88,7 @@ public:
         m_builder = builder;
     }
 
-    void make(string& type){
+    void make(string type){
         m_builder->reset();
         if (type == "A"){
             m_builder->buildStepA();
